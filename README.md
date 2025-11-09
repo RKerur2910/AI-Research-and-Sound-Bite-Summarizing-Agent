@@ -82,7 +82,6 @@ The full automation pipeline — connecting Perplexity API, OpenAI Chat Models, 
   
 **Riya Kalyan Kerur**  
 Master’s Student, Computer Engineering — California State University, Sacramento  
-📧 [riya.kerur2910@gmail.com](mailto:riya.kerur2910@gmail.com)  
 🌐 [LinkedIn](https://www.linkedin.com/in/riya-kerur/)  
 
 ---
