@@ -33,7 +33,7 @@ You can visualize the process with screenshots (insert yours here 👇):
 
 #### 1️⃣ Form Input  
 This is the user-facing form where a topic and time period are entered.  
-![Form Input](assetsform_input.png)  
+![Form Input](assets form_input.png)  
 
 #### 2️⃣ Automated Email Output  
 The workflow automatically sends the generated audio summary to the user’s email inbox.  
