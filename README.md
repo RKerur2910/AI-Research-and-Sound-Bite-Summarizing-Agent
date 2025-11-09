@@ -6,11 +6,10 @@
 
 ## 📘 Overview  
 
-This project is a **no-code AI workflow built in n8n** that automates research and delivers **topic-based executive summaries as audio files** directly to a user’s inbox.  
+This project is a **no-code AI workflow built in n8n** that automates research and delivers **topic-based executive summaries as audio files** directly to a user’s inbox.
+It combines **AI-powered research, summarization, and voice generation** in one streamlined automation—no manual coding required.
 
-It combines **AI-powered research, summarization, and voice generation** in one streamlined automation — no manual coding required.  
-
-The agent takes a user-submitted topic, performs **AI-assisted research using the Perplexity API**, generates a structured summary using **OpenAI’s chat models**, and converts that summary into speech using **OpenAI TTS** — all within a single n8n workflow.  
+The agent takes a user-submitted topic, performs **AI-assisted research via the Perplexity API**, generates a structured summary using **OpenAI chat models**, and converts that summary into speech using OpenAI TTS all within a single n8n workflow.
 
 ---
 
@@ -36,6 +35,8 @@ OpenAI TTS Node (Audio Generation)
    ↓  
 Email Node (Output Delivery)
 
+---
+
 ### Visual Workflow  
 You can visualize the process with screenshots (insert yours here 👇):   
 
@@ -51,51 +52,37 @@ The workflow automatically sends the generated audio summary to the user’s ema
 The full automation pipeline — connecting Perplexity API, OpenAI Chat Models, TTS, and Gmail nodes.  
 ![Workflow Overview](assets/workflow_overview.jpg)  
 
-## 🧪 Results  
+---
 
-- Produced reliable summaries in both **text and audio** formats.  
-- Eliminated **blank audio output** and **TTS truncation** issues through prompt chunking.  
-- Delivered **consistent, production-ready** audio summaries across multiple test topics.  
+## 📝 Process
+- User submits a topic and time window to focus the research
+- Agent orchestrates research → summarization → audio generation
+- Includes an evaluation step for violations; OpenAI chat models generate reliable, clean insights
+- Final audio file is emailed to the user
+  
+---
+
+## ⚡ Challenges & Fixes
+- Blank audio output: Re-ran the workflow node-by-node; root cause was incorrect TTS node mapping → fixed mapping, added blank-summary checks, chunking, and stronger file handling for resilience
+- Length constraints: TTS accepts ~4,096 characters → streamlined the summarization prompt to keep outputs within limits, improving consistency and reliability
 
 ---
 
-## 🔍 Use Cases  
-
-- Automating daily research updates  
-- Converting news, reports, or whitepapers into short audio briefs  
-- Acting as a research assistant for content creators, journalists, or analysts  
-
----
-
-## 📁 Repository Structure  
-
-
-
+## 🔍 Use Cases
+- Automated daily research updates
+- Turning news/whitepapers into short audio briefs
+- Research assistant for creators, journalists, analysts
 
 ---
 
-## 🧩 How to Reproduce  
-
-1. Open **n8n** (cloud or local instance).  
-2. Import the `.json` workflow (optional if you exported it).  
-3. Add your **Perplexity API** and **OpenAI API** keys.  
-4. Run the workflow — you’ll receive a summarized audio file in your inbox!  
-
----
-
-## 🧠 Learnings  
-
-- Designing **multi-step LLM automation** without traditional coding.  
-- Managing **data chunking and context retention** for large language model responses.  
-- Applying **API orchestration principles** to real-world AI pipelines.  
-
----
-
-## 👩‍💻 Author  
-
+## ▶️ Next Steps
+- Deliver summaries as a mini-podcast / ≤60-second clip
+- Multi-topic batching + daily digest emails
+- Export transcripts alongside audio
+  
 **Riya Kalyan Kerur**  
 Master’s Student, Computer Engineering — California State University, Sacramento  
 📧 [riya.kerur2910@gmail.com](mailto:riya.kerur2910@gmail.com)  
-🌐 [LinkedIn](https://www.linkedin.com/in/your-link)  
+🌐 [LinkedIn](https://www.linkedin.com/in/riya-kerur/)  
 
 ---
