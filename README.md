@@ -26,13 +26,15 @@ The agent takes a user-submitted topic, performs **AI-assisted research using th
 
 ## 🧰 Workflow Architecture  
 
-```mermaid
-graph TD
-    A[🧾 User Form Submission] --> B[🔎 Perplexity API - Research Node]
-    B --> C[🧠 OpenAI Chat Node - Summarization]
-    C --> D[🎙️ OpenAI TTS Node - Audio Generation]
-    D --> E[📧 Email Node - Send Audio Summary to User]
-
+User Form  
+   ↓  
+Perplexity API (Research Node)  
+   ↓  
+OpenAI Chat Node (Summarization)  
+   ↓  
+OpenAI TTS Node (Audio Generation)  
+   ↓  
+Email Node (Output Delivery)
 
 ### Visual Workflow  
 You can visualize the process with screenshots (insert yours here 👇):   
