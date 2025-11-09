@@ -29,16 +29,19 @@ The agent takes a user-submitted topic, performs **AI-assisted research using th
 
 
 ### Visual Workflow  
-You can visualize the process with screenshots (insert yours here 👇):  
+You can visualize the process with screenshots (insert yours here 👇):   
 
-📸 **Screenshot 1:** Overall n8n workflow structure  
-📸 **Screenshot 2:** Perplexity API configuration  
-📸 **Screenshot 3:** OpenAI TTS output sample  
+#### 1️⃣ Form Input  
+This is the user-facing form where a topic and time period are entered.  
+![Form Input](assets/form_input.png)  
 
-> Add images to a folder `/assets` and reference them like this:  
-> `![Workflow Overview](assets/workflow_overview.png)`  
+#### 2️⃣ Automated Email Output  
+The workflow automatically sends the generated audio summary to the user’s email inbox.  
+![Email Output](assets/email_output.png)  
 
----
+#### 3️⃣ n8n Workflow Overview  
+The full automation pipeline — connecting Perplexity API, OpenAI Chat Models, TTS, and Gmail nodes.  
+![Workflow Overview](assets/workflow_overview.png)  
 
 ## 🧪 Results  
 
