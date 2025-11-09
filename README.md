@@ -33,15 +33,15 @@ You can visualize the process with screenshots (insert yours here 👇):
 
 #### 1️⃣ Form Input  
 This is the user-facing form where a topic and time period are entered.  
-![Form Input](assets\/form_input.jpg)
+![Form Input](assets/form_input.jpg)
 
 #### 2️⃣ Automated Email Output  
 The workflow automatically sends the generated audio summary to the user’s email inbox.  
-![Email Output](assets\/email_output.png)  
+![Email Output](assets/email_output.jpg)  
 
 #### 3️⃣ n8n Workflow Overview  
 The full automation pipeline — connecting Perplexity API, OpenAI Chat Models, TTS, and Gmail nodes.  
-![Workflow Overview](assets\/workflow_overview.png)  
+![Workflow Overview](assets/workflow_overview.jpg)  
 
 ## 🧪 Results  
 
