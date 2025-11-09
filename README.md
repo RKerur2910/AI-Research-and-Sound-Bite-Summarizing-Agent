@@ -37,11 +37,11 @@ This is the user-facing form where a topic and time period are entered.
 
 #### 2️⃣ Automated Email Output  
 The workflow automatically sends the generated audio summary to the user’s email inbox.  
-![Email Output](assets/email_output.png)  
+![Email Output](assets\/email_output.png)  
 
 #### 3️⃣ n8n Workflow Overview  
 The full automation pipeline — connecting Perplexity API, OpenAI Chat Models, TTS, and Gmail nodes.  
-![Workflow Overview](assets/workflow_overview.png)  
+![Workflow Overview](assets\/workflow_overview.png)  
 
 ## 🧪 Results  
 
